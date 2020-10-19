@@ -1,7 +1,7 @@
 //great extension - 'type rfce'
 //also emmet trick - add that
 
-import React, {useState} from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 function uuidv4() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -9,6 +9,12 @@ function uuidv4() {
     return v.toString(16);
   });
 }
+
+const inputRef = useRef(null)
+
+useEffect(() => {
+  inputRef.current.focus()
+})
 
 function TodoForm(props) {
   const [input, setInput] = useState('')
@@ -37,6 +43,7 @@ function TodoForm(props) {
         name="text"
         className="todo-input"
         onChange={handleChange}
+        ref={inputRef}
       />
       <button className="todo-button">Add todo</button>
     </form>
