@@ -10,14 +10,15 @@ function uuidv4() {
   });
 }
 
-const inputRef = useRef(null)
-
-useEffect(() => {
-  inputRef.current.focus()
-})
+//this doesn't work - maybe try yarn instead of npm next time
 
 function TodoForm(props) {
   const [input, setInput] = useState('')
+
+  const inputRef = useRef(null)
+  useEffect(() => {
+  inputRef.current.focus()
+})
 
   const handleChange = e => {
     setInput(e.target.value)
