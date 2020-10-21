@@ -1,6 +1,8 @@
-### The code is live: https://thomashoddinott.github.io/todo-list-app-with-react-hooks/
+**The code is live: https://thomashoddinott.github.io/todo-list-app-with-react-hooks/**
 
-### React Todo List App Tutorial: https://www.youtube.com/watch?v=E1E08i2UJGI
+In this project we make use of `useState`, `useEffect` and `useRef` in React Hooks to create a simple Todo list application. 
+
+See: [React Todo List App Tutorial](https://www.youtube.com/watch?v=E1E08i2UJGI)
 
 ---
 

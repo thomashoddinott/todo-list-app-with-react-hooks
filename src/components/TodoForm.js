@@ -1,7 +1,4 @@
-//great extension - 'type rfce'
-//also emmet trick - add that
-//find out how to accept keyboard input? - c to clear todo when we hover over it?
-//
+//try https://usehooks.com/useKeyPress/ to delete entres with 'c', for example?
 
 import React, { useState, useEffect, useRef } from 'react'
 
